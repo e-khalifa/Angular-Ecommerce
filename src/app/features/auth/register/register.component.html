@@ -1,0 +1,50 @@
+<div class="card shadow-lg p-4 mx-auto my-5" style="max-width: 500px; width: 80%">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="row g-3">
+        <div class="col-md-6">
+            <label for="fName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fName" formControlName="fName">
+        </div>
+        <div class="col-md-6">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" formControlName="lName" id="lname">
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            @if (email?.invalid && email?.touched) {
+            @if(email?.errors?.['required']){
+            <div class="text-danger mt-1 fs-6">Email address is Required</div>
+            } @else{
+            <div class="text-danger mt-1 fs-6">Please add A valid email address</div>
+            }
+            }
+        </div>
+        <div class="col-12">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+            @if (password?.invalid && password?.touched) {
+            @if (password?.errors?.['required']) {
+            <div class="text-danger mt-1">Password is Required</div>
+            } @else if (password?.errors?.['minlength']) {
+            <div class="text-danger mt-1">Password must be at least 8 characters</div>
+            } @else if (password?.errors?.['pattern']) {
+            <div class="text-danger mt-1">Password must contain at least one uppercase letter, one number, and one
+                special
+                character</div>
+            }
+            }
+        </div>
+        <div class="col-12">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+            @if(confirmPassword?.hasError('passwordMismatch')){
+            <div class="text-danger mt-1">Password don't match</div>
+            }
+        </div>
+        <p>Already have an account? <a routerLink="/login" routerLinkActive="active"
+                style="text-decoration: underline; color: blue; cursor: pointer">Log in</a></p>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Sign up</button>
+        </div>
+    </form>
+</div>
