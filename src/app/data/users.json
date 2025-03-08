@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fName": "ahmed",
+      "lName": "gamal",
+      "email": "ahmedJ@yahoo.com",
+      "password": "1Hamada*9"
+    },
+    {
+      "id": "a424366a-874a-4e93-af75-c473eba276c7",
+      "fName": "‪Esraa",
+      "lName": "khalifa‬‏",
+      "email": "esraa8@yahoo.com",
+      "password": "Hamda65$"
+    }
+  ]
+}

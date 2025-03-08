@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { UsersService } from '../../../services/users.service';
+import { v4 as generateId } from 'uuid'
+import { User } from '../../../shared/utils/user';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +11,18 @@ import { RouterModule } from '@angular/router';
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
-export class RegisterComponent {
+export class RegisterComponent implements OnInit {
+  usersData: any;
+  constructor(private myUserService: UsersService, private router: Router) { }
+  ngOnInit(): void {
+    this.myUserService.getAllUsers().subscribe({
+      next: (data) => {
+        console.log(data);
+        this.usersData = data
+      },
+      error: (err) => { console.log(err) }
+    });
+  }
   registerForm = new FormGroup({
     fName: new FormControl(null, Validators.required),
     lName: new FormControl(null, Validators.required),
@@ -33,17 +47,42 @@ export class RegisterComponent {
   get confirmPassword() {
     return this.registerForm.get('confirmPassword');
   }
+  get fName() {
+    return this.registerForm.get('fName');
+  }
+  get lName() {
+    return this.registerForm.get('lName');
+  }
   onSubmit() {
-    const password = this.password?.value;
-    const confirmPassword = this.confirmPassword?.value;
-
-    if (password !== confirmPassword) {
-      this.confirmPassword?.setErrors({ passwordMismatch: true });
-    }
     if (this.registerForm.valid) {
-      alert('Successful Signup!');
-    } else {
-      alert('Signup Failed');
+      const user = this.usersData.find((u: any) => u.email === this.email?.value);
+      if (user) {
+        this.registerForm.controls['email'].setErrors({ found: true });
+        return;
+      }
+      if (this.password?.value !== this.confirmPassword?.value) {
+        this.confirmPassword?.setErrors({ passwordMismatch: true });
+        return;
+      }
+
+      const newUser: User = {
+        id: generateId(), fName: this.fName?.value ?? null,
+        lName: this.lName?.value ?? null,
+        email: this.email?.value ?? null,
+        password: this.password?.value ?? null
+      }
+
+      this.myUserService.addANewUser(newUser).subscribe({
+        next: () => {
+          console.log('User registered:', newUser.id);
+          localStorage.setItem('userId', newUser.id);
+          this.router.navigate(['/home']);
+        },
+        error: (err) => {
+          console.error('Error registering user:', err);
+        }
+      });
     }
   }
 }
+

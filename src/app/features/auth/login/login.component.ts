@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { UsersService } from '../../../services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,19 @@ import { RouterModule } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+  usersData: any;
+  constructor(private myUserService: UsersService, private router: Router) { }
+  ngOnInit(): void {
+    this.myUserService.getAllUsers().subscribe({
+      next: (data) => {
+        console.log(data);
+        this.usersData = data
+      },
+      error: (err) => { console.log(err) }
+    });
+  }
+
   loginForm = new FormGroup({
     email: new FormControl(null, [Validators.email, Validators.required]),
     password: new FormControl(null,
@@ -26,9 +39,15 @@ export class LoginComponent {
   }
   onSubmit() {
     if (this.loginForm.valid) {
-      alert('Login Successful!');
-    } else {
-      alert('Login Failed');
+      const user = this.usersData.find((u: any) => u.email === this.email?.value);
+      if (!user) {
+        this.loginForm.controls['email'].setErrors({ notFound: true });
+      } else if (user.password !== this.password?.value) {
+        this.loginForm.controls['password'].setErrors({ incorrectPassword: true });
+      } else {
+        localStorage.setItem('userId', user.id);
+        this.router.navigate(['/home']);
+      }
     }
   }
 }

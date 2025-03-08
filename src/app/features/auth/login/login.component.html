@@ -1,11 +1,17 @@
 <div class="card shadow-lg p-4 mx-auto my-5" style="max-width: 500px; width: 80%">
+    <h2 class="fw-bold text-primary mb-3 mx-auto">Sign In</h2>
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="row g-3">
         <div class="col-12">
             <label for="inputEmail4" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="inputEmail4" formControlName="email">
-            @if (email?.invalid && email?.touched) {
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" id="inputEmail4" formControlName="email"
+                    placeholder="Enter your email">
+            </div> @if (email?.invalid && email?.touched) {
             @if(email?.errors?.['required']){
             <div class="text-danger mt-1 fs-6">Email address is Required</div>
+            } @else if(email?.errors?.['notFound']){
+            <div class="text-danger mt-1 fs-6">Email not found. Please sign up first</div>
             } @else{
             <div class="text-danger mt-1 fs-6">Please add A valid email address</div>
             }
@@ -13,12 +19,19 @@
         </div>
         <div class="col-12">
             <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" formControlName="password">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" class="form-control" id="inputPassword4" formControlName="password"
+                    placeholder="Enter your password">
+            </div>
+            @if(password?.errors?.['incorrectPassword']){
+            <div class="text-danger mt-1 fs-6">Incorrect password. Please try again</div>
+            }
         </div>
         <p>Don't have an account? <a routerLink="/register" routerLinkActive="active"
                 style="text-decoration: underline; color: blue; cursor: pointer">Sign up instead</a></p>
         <div class=" col-12">
-            <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+            <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">Sign In</button>
         </div>
     </form>
 </div>
