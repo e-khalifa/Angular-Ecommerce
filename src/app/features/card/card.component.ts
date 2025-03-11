@@ -7,5 +7,5 @@ import { RouterModule } from '@angular/router';
   styles: ``
 })
 export class CardComponent {
-
+   flag:boolean=false;
 }
