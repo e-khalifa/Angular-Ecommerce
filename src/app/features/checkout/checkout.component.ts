@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 @Component({
-  selector: 'app-card',
+  selector: 'app-checkout',
   imports: [RouterModule],
-  templateUrl: './card.component.html',
+  templateUrl: './checkout.component.html',
   styles: ``
 })
-export class CardComponent {
+export class CheckoutComponent {
 
 }

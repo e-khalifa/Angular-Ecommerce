@@ -9,6 +9,7 @@ import { ProfileComponent } from './features/profile/profile.component';
 import { OrdersComponent } from './features/profile/orders/orders.component';
 import { SettingsComponent } from './features/profile/settings/settings.component';
 import { PasswordComponent } from './features/profile/password/password.component';
+import { CheckoutComponent } from './features/checkout/checkout.component';
 
 export const routes: Routes = [
   // { path: 'login', component: LoginComponent, title: 'Login' },
@@ -27,6 +28,7 @@ export const routes: Routes = [
   { path: 'card', component: CardComponent, title: 'Card' },
   { path: 'about', component: AboutComponent, title: 'About' },
   { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
+  { path: 'checkout', component: CheckoutComponent, title: 'Checkout' },
 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

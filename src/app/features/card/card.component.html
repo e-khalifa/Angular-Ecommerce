@@ -1,1 +1,74 @@
-<p>card works!</p>
+
+<div class=" ms-3 mt-lg-5">
+    <span class="fw-semibold">
+        <a routerLinkActive="active"  routerLink="/home" class="text-decoration-none text-secondary fs-6" >HOME </a> 
+        <span class="text-secondary">
+             /
+        </span>
+        <span>
+             CART
+        </span>
+    </span>   
+</div>
+<div class="border border-2 border-danger w-75 mx-auto mt-3">
+    
+    <div class="d-flex justify-content-evenly text-center ms-2"> <!--titles-->
+        <span class="fw-bold w-25">Product</span>
+        <span class="fw-bold w-25">Price</span>
+        <span class="fw-bold w-25">Quantity</span>
+        <span class="fw-bold w-25">Total</span>
+    </div>
+    <hr>
+    
+    <div class="d-flex justify-content-evenly align-items-center text-center"> <!--Cart items div-->
+        
+        <button type="button" class="btn-close ms-1 mb-3" aria-label="Close"></button>
+        <span class="w-25">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcY-7hiVz9oDJjPs5mV2-LxEsF9UWWrlRBTA&s" alt="shirt" class="w-25 me-4">
+            <div class="font-monospace me-4">product name</div>
+        </span>
+        
+        <span class="w-25 me-3">$50.99</span>
+        
+        <span class="w-25 me-3">
+            <button class="btn fs-5 fw-light">
+                -
+            </button>
+                <span class="fw-bold">1</span>
+            <button class="btn fs-6 fw-light">
+                +
+            </button>
+        </span>
+        
+        <span class="w-25 me-1">$50.99</span>
+    </div>
+    <hr class="mb-5">
+    
+    <!--[w-sm-75] not working for some reason-->
+<div class="align-bottom border border-2 border-warning mb-5 w-25 w-sm-75 "> <!-- Cart Total div-->
+    
+        <h2>Cart Total</h2>
+        
+        <div class="d-flex justify-content-between">
+            <span>Subtotal</span>
+            <span>$50.99</span>
+        </div>
+        <hr>
+
+        <div class="d-flex justify-content-between">
+            <span>Free Shipping</span>
+            <span>$0</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+            <span class="fw-bold">Total</span>
+            <span class="fw-bold">$50.99</span>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <a routerLinkActive="active"  routerLink="/checkout" class="text-decoration-none " >
+                <button type="button" class="btn btn-outline-dark fw-bold border-3">Proceed to checkout</button>
+            </a>
+             <!--color faksan -->
+        </div>
+        
+    </div>
