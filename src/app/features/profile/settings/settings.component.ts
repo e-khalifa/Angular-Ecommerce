@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
+import { UsersService } from '../../../services/users.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,16 +10,28 @@ import { NgIf } from '@angular/common';
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.css'],
 })
-export class SettingsComponent {
-  user = {
-    firstName: 'Yousef',
-    lastName: 'Hamdy',
-    email: 'yousef.hamdy3108@gmail.com',
-    mobile: '01204622141',
-    gender: 'Male',
-    avatar: 'profileImg.png',
-  };
+export class SettingsComponent implements OnInit {
+  user: any = {};
   isEditing = false;
+
+  constructor(private userService: UsersService) {}
+
+  ngOnInit(): void {
+    const userId = localStorage.getItem('userId');
+
+    if (userId) {
+      this.userService.getUserById(userId).subscribe({
+        next: (foundUser) => {
+          this.user = foundUser;
+        },
+        error: (err) => {
+          console.error('User not found', err);
+        },
+      });
+    } else {
+      console.error('No userId found in localStorage');
+    }
+  }
 
   toggleEdit(): void {
     this.isEditing = !this.isEditing;
@@ -40,8 +53,19 @@ export class SettingsComponent {
   }
 
   saveChanges(): void {
-    console.log('User details saved:', this.user);
-    this.isEditing = false;
+    if (this.user.id) {
+      this.userService.editUserData(this.user.id, this.user).subscribe({
+        next: (updatedUser) => {
+          console.log('User updated successfully:', updatedUser);
+          this.isEditing = false;
+        },
+        error: (err) => {
+          console.error('Error updating user:', err);
+        },
+      });
+    } else {
+      console.error('User ID not found, unable to update.');
+    }
   }
 
   triggerFileInput(): void {

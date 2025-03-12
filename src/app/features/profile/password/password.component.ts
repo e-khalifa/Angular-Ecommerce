@@ -1,30 +1,65 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { UsersService } from '../../../services/users.service';
 
 @Component({
   selector: 'app-password',
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './password.component.html',
-  styleUrl: './password.component.css',
+  styleUrls: ['./password.component.css'],
 })
-export class PasswordComponent {
-  user = {
-    firstName: 'Yousef',
-    lastName: 'Hamdy',
-    avatar: 'profileImg.png',
-  };
-  password: string = '123456Q@';
+export class PasswordComponent implements OnInit {
+  user: any = { password: '' }; // تأكد من وجود password داخل user
   showPassword: boolean = false;
   isEditing: boolean = false;
+
+  constructor(private userService: UsersService) {}
+
+  ngOnInit(): void {
+    const userId = localStorage.getItem('userId');
+
+    if (userId) {
+      this.userService.getUserById(userId).subscribe({
+        next: (foundUser) => {
+          this.user = foundUser;
+        },
+        error: (err) => {
+          console.error('User not found', err);
+        },
+      });
+    } else {
+      console.error('No userId found in localStorage');
+    }
+  }
 
   togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
   }
 
   toggleEdit(): void {
-    if (this.isEditing) {
-      console.log('Password saved:', this.password);
+    if (this.isEditing && this.user.id) {
+      // جلب بيانات المستخدم قبل التعديل
+      this.userService.getUserById(this.user.id).subscribe({
+        next: (currentUser) => {
+          const updatedUser = { ...currentUser, password: this.user.password }; // تحديث الباسورد فقط
+
+          // إرسال التحديث
+          this.userService.editUserData(this.user.id, updatedUser).subscribe({
+            next: () => {
+              console.log('Password updated successfully');
+            },
+            error: (err) => {
+              console.error('Error updating password:', err);
+            },
+          });
+        },
+        error: (err) => {
+          console.error('Error fetching user data:', err);
+        },
+      });
     }
+
     this.isEditing = !this.isEditing;
   }
 }
