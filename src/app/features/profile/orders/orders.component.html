@@ -1,6 +1,6 @@
 <div class="orders">
   <div class="order-card" *ngFor="let order of orders">
-    <img [src]="order.image" alt="T-shirt" class="order-image" />
+    <img [src]="order.image" [alt]="order.name" class="order-image" />
     <div class="order-details">
       <h3 class="order-title">{{ order.name }}</h3>
       <p class="order-description">{{ order.description }}</p>
