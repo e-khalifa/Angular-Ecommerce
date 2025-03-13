@@ -10,7 +10,7 @@ import { UsersService } from '../../../services/users.service';
   styleUrls: ['./password.component.css'],
 })
 export class PasswordComponent implements OnInit {
-  user: any = { password: '' }; // تأكد من وجود password داخل user
+  user: any = { password: '' };
   showPassword: boolean = false;
   isEditing: boolean = false;
 
@@ -39,12 +39,9 @@ export class PasswordComponent implements OnInit {
 
   toggleEdit(): void {
     if (this.isEditing && this.user.id) {
-      // جلب بيانات المستخدم قبل التعديل
       this.userService.getUserById(this.user.id).subscribe({
         next: (currentUser) => {
-          const updatedUser = { ...currentUser, password: this.user.password }; // تحديث الباسورد فقط
-
-          // إرسال التحديث
+          const updatedUser = { ...currentUser, password: this.user.password };
           this.userService.editUserData(this.user.id, updatedUser).subscribe({
             next: () => {
               console.log('Password updated successfully');
