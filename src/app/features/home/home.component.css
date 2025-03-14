@@ -1,0 +1,21 @@
+.custom-background {
+    background-image: url("./../../../../public/bg1.avif"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.bg-text{
+    position: relative;
+    top: 30%;
+    left: 65%;
+    color: antiquewhite;
+    
+}
+.custom-container{
+    width: 90%;
+    margin: auto;
+}
+.peace{
+    width: 50vw;
+    height: 60vh;
+}

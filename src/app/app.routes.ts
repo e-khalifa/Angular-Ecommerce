@@ -11,11 +11,13 @@ import { SettingsComponent } from './features/profile/settings/settings.componen
 import { PasswordComponent } from './features/profile/password/password.component';
 import { CheckoutComponent } from './features/checkout/checkout.component';
 import { AuthGuard } from './features/auth/auth.guard';
+import { ProductsComponent } from './features/products/products.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent, title: 'Login' },
   { path: 'register', component: RegisterComponent, title: 'Register' },
   { path: 'home', component: HomeComponent, title: 'Home' },
+  { path: 'products', component: ProductsComponent, title: 'Products' },
   { path: 'card', component: CardComponent, title: 'Card' },
   { path: 'about', component: AboutComponent, title: 'About' },
   { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
