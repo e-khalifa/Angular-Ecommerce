@@ -1,5 +1,7 @@
-<div class="d-flex">
+
+<div class="d-flex flex-wrap justify-content-between container">
 @for (product of allProductData; track $index) {
+    
     <app-one-product [oneProduct]="product"></app-one-product>
  }
 </div>
