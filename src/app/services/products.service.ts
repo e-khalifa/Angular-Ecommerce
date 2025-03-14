@@ -12,4 +12,7 @@ export class ProductsService {
   getAllData(){
     return this.myClient.get(this.URLData)
   }
+  getProductById(id:number){
+    return this.myClient.get(`${this.URLData}/${id}`);
+  }
 }
