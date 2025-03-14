@@ -1,1 +1,5 @@
-<p>products works!</p>
+<div class="d-flex">
+@for (product of allProductData; track $index) {
+    <app-one-product [oneProduct]="product"></app-one-product>
+ }
+</div>

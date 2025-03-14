@@ -11,8 +11,10 @@
         <h2 class="text-center my-5">Discover New Arrivals</h2>
         <h4 class="text-secondary text-center my-5">Recently Added Shirts !</h4>
     </div>
-
-    <div>Products</div>
+@for (product of allProductData; track $index) {
+   <app-one-product [oneProduct]="product"></app-one-product>
+}
+    
 
     <div class="d-flex">
         <div class="d-flex">

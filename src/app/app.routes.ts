@@ -12,17 +12,21 @@ import { PasswordComponent } from './features/profile/password/password.componen
 import { CheckoutComponent } from './features/checkout/checkout.component';
 import { AuthGuard } from './features/auth/auth.guard';
 import { ProductsComponent } from './features/products/products.component';
+import { ProductDetailsComponent } from './features/product-details/product-details.component';
+import { ErrorComponent } from './services/error/error.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent, title: 'Login' },
   { path: 'register', component: RegisterComponent, title: 'Register' },
   { path: 'home', component: HomeComponent, title: 'Home' },
   { path: 'products', component: ProductsComponent, title: 'Products' },
+  { path: 'products/:id', component: ProductDetailsComponent, title: 'Products Details' },
   { path: 'card', component: CardComponent, title: 'Card' },
   { path: 'about', component: AboutComponent, title: 'About' },
   { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
   { path: 'checkout', component: CheckoutComponent, title: 'Checkout' },
-
+  { path: "**", component: ErrorComponent, title: "Error" },
   {
     path: 'profile',
     component: ProfileComponent,
@@ -35,5 +39,4 @@ export const routes: Routes = [
     ],
   },
 
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
