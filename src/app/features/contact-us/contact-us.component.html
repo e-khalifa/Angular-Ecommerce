@@ -13,7 +13,7 @@
                     formControlName="name"
                     [class.is-invalid]="submitted && contactForm.controls['name'].invalid"
                 />
-                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.name.errors">
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls['name']errors">
                     Name is required.
                 </div>
                 </div>
@@ -27,7 +27,7 @@
                     formControlName="email"
                     [class.is-invalid]="submitted && contactForm.controls['email'].invalid"
                 />
-                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.email.errors">
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls['email'].errors">
                     Enter a valid email.
                 </div>
                 </div>
@@ -41,7 +41,7 @@
                     formControlName="message"
                     [class.is-invalid]="submitted && contactForm.controls['message'].invalid"
                 ></textarea>
-                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.message.errors">
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls['message'].errors">
                     Message is required.
                 </div>
                 </div>
