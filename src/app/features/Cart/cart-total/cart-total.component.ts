@@ -1,16 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../../../services/cart.service';
 import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-cart-total',
-  imports: [RouterModule],
+  imports: [RouterModule,CommonModule],
   templateUrl: './cart-total.component.html',
   styles: ``
 })
-export class CartTotalComponent {
-  constructor(private myCart:CartService){
-    this.total=this.myCart.getTotal()
+export class CartTotalComponent implements OnInit {
+  total: number = 0;
+
+  constructor(private myCart: CartService) {}
+
+  ngOnInit() {
+    
+    this.myCart.cart$.subscribe((cart) => {
+      this.total = this.myCart.getTotal(); 
+    });
+
+    this.total = this.myCart.getTotal();
   }
-   total:number;
 }
