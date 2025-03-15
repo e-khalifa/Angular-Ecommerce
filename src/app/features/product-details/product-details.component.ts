@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
+import { CartService } from '../../services/cart.service';
 @Component({
   selector: 'app-product-details',
   imports: [RouterModule,CommonModule,FontAwesomeModule],
@@ -21,9 +22,11 @@ export class ProductDetailsComponent implements OnInit{
   faStar = faStar;
   faStarHalfAlt = faStarHalfAlt;
 
+  cart:any;
 
-  constructor(myActivated:ActivatedRoute,private myProductsService: ProductsService){
+  constructor(myActivated:ActivatedRoute,private myProductsService: ProductsService , private myCart:CartService){
     this.ID= myActivated.snapshot.params["id"];
+    this.cart=myCart.getCart();
   }
 
   ngOnInit(): void {
@@ -53,5 +56,14 @@ export class ProductDetailsComponent implements OnInit{
     let emptyStars = 5 - fullStars - halfStar;
     return { fullStars, halfStar, emptyStars };
   }
-  
-}
+  addToCart=()=>{    
+    console.log('cart length bfore: ',this.cart.length); 
+    for (let i=0;i<this.productQuantitiy;i++)
+    {
+      this.myCart.addToCart(this.productObj);
+    }
+    console.log('cart length after: ',this.cart.length); 
+    console.log("cart  ",this.cart);
+  }
+  }
+

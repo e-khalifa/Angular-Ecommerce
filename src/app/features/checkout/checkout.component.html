@@ -60,47 +60,56 @@
                       <tr>
                         <th scope="col">Products</th>
                        
-                        <th scope="col">Total</th>
+                        <th scope="col">Price</th>
                       </tr>
                     </thead>
                     <tbody>
+                      @for (item of cart; track $index) {
                       <tr>
-                        <td scope="row">product name</td>
-                        <td>$50.99</td>
+                        <td scope="row">{{item.title}}</td>
+                        <td>{{item.total}}</td>
                       </tr>
-                    </tbody>
+                    }
+                    <tr>
+                      <td class="fw-bold">TOTAL</td>
+                      <td >{{total }}</td>
+                    </tr>
+                  
+                  </tbody>
                   </table>
-                  <div class="d-flex justify-content-center mt-1 mb-1">
-                        <button type="submit" class="btn btn-outline-dark fw-bold border-3 me-md-5">Payment</button>
-                  </div>
-                </div>
+        </div>
         </div>
       </form>
-      <div class="col-12 col-lg-4  p-5 mb-5 mt-0 mt-md-4"> <!-- PAYMENT DIV-->
-          <span class="text-bg-warning fs-2 ms-5">to be updated 😢</span>
-        <div class="container mt-4 p-5">
-            <form>
-              <div class="form-group">
-                <label for="cardNumber">Card Number</label>
-                <input type="text" id="cardNumber" class="form-control" placeholder="Enter Visa card number" maxlength="16">
-              </div>
-              <div class="form-row mt-3">
-                <div class="col">
-                  <label for="expirationDate">Expiration Date</label>
-                  <input type="month" id="expirationDate" class="form-control">
-                </div>
-                <div class="col">
-                  <label for="cvc">CVC</label>
-                  <input type="text" id="cvc" class="form-control" placeholder="123" maxlength="3">
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary mt-4">Submit</button>
-            </form>
-          </div>
-          
+      <div class="col-12 col-lg-4  p-5 mb-5 mt-0 mt-md-4"> <!-- Shopping cart image-->
+          <img class="w-100 ms-5 ms-md-0" src="cartBags.png" alt="cart full of Shopping bags">
+      </div>
+</div>
+
+
+<div class="d-flex justify-content-end fixed-bottom">
+  <a routerLinkActive="active"  routerLink="/home" class="text-black fs-6 fw-semibold me-5 " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart mb-2" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+    </svg> Continue Shopping</a>
+</div>
+
+
+<div class="col-12 col-lg-4 p-5 mt-0 mt-md-4 mx-auto justify-content-center border border-danger"> <!-- PAYMENT DIV-->
+<div class="container mt-4 p-1">
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">Cash on delivery</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">Paypal</label>
+  </div>
+  <div class="d-flex justify-content-center mt-2">
+     <button type="submit" class="btn btn-outline-dark fw-bold border-3 me-md-5 " (click)="toggleVisibilty()" >Payment</button>
   </div>
 </div>
 
-<a routerLinkActive="active"  routerLink="/home" class="text-black ms-3 fs-6 fw-semibold position-absolute " ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart mb-2" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-  </svg> Continue Shopping</a>
+</div>
+<div class="bg-success d-flex justify-content-center col-12 border border-danger border-2" *ngIf="done">
+  <span class="text-center">ORDER COMPLETED SUCCESSFULLY 🎉</span>
+
+</div>

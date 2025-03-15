@@ -1,21 +1,25 @@
 .custom-background {
-    background-image: url("./../../../../public/bg1.avif"); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+  background-image: url("./../../../../public/bg1.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
-.bg-text{
-    position: relative;
-    top: 30%;
-    left: 65%;
-    color: antiquewhite;
-    
+
+.bg-text {
+  position: absolute;
+  color: antiquewhite;
+  bottom: 20%;
+  right: 10%;
+
 }
-.custom-container{
-    width: 90%;
-    margin: auto;
+
+.custom-container {
+  width: 90%;
+  margin: auto;
 }
-.peace{
-    width: 50vw;
-    height: 60vh;
+
+.peace {
+  width: 50vw;
+  height: 60vh;
 }

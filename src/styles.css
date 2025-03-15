@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.icon{
+    cursor: pointer;
+    transition:transform 0.1s ease-in-out;
+  }
+  .icon:hover{
+    transform: scale(1.3);
+  }
+.cardButtons{
+    cursor: pointer;
+    transition:transform 0.1s ease-in-out;
+  }
+  .cardButtons:hover{
+    transform: scale(1.1);
+  }
+  .full-window-drawer {
+    width: 100vw;
+    height: 100vh; 
+    max-width: 100%;
+  }
+  
