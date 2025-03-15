@@ -13,7 +13,8 @@ import { CommonModule } from '@angular/common';
 export class NavBarComponent {
    constructor(myCart:CartService){
       this.cart=myCart.getCart();
-      
+      this.cartCount=this.cart.length;
     }
      cart:any;
+     cartCount;
 }
