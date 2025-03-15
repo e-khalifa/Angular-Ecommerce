@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { HomeComponent } from './features/home/home.component';
-import { CardComponent } from './features/card/card.component';
+import { CardComponent } from './features/Cart/card/card.component';
 import { AboutComponent } from './features/about/about.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
 import { ProfileComponent } from './features/profile/profile.component';

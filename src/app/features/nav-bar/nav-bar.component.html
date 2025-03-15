@@ -19,12 +19,12 @@
       </ul>
       <form class="d-flex" role="search">
         <a class="mx-3" routerLink="/login" routerLinkActive="active">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person text-black" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person text-black icon" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
           </svg>
         </a>
         <span class="me-3" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag text-black" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag text-black icon" viewBox="0 0 16 16">
             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
           </svg>
         </span>
@@ -38,15 +38,37 @@
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasRightLabel">
       <a class="text-black fs-5" routerLink="/card" routerLinkActive="active" data-bs-dismiss="offcanvas" aria-label="Close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag text-black ms-4" viewBox="0 0 16 16">
-          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-        </svg>
-        <span class="d-block">Cart details</span>
+        <!--********MINI CART BAG ICON HERE ****-->
+        <span class="d-block" >Cart details
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag text-black ms-2 icon mb-2" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+          </svg>
+        </span>
+        
       </a>
     </h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body fs-6">
-    <app-card></app-card>
+  <div class="offcanvas-body fs-6"> <!-- CANVAS BODY -->
+    <div class=" ms-4 mt-lg-5 mb-5"> <!--BREAD CRUMB-->
+      <span class="fw-semibold">
+          <a routerLinkActive="active"  routerLink="/home" class="text-decoration-none text-secondary fs-6" data-bs-dismiss="offcanvas" aria-label="Close">HOME </a> 
+          <span class="text-secondary">
+               /
+          </span>
+          <span>
+               CART
+          </span>
+      </span>   
   </div>
+    <app-cart-items class="mt-5" data-bs-dismiss="offcanvas" aria-label="Close"/><!--cart items-->
+   
+    <div class="" *ngIf="cart.length>0;">
+      <div class="d-flex justify-content-center">
+        <a routerLinkActive="active"  routerLink="/checkout" class="text-decoration-none " >
+            <button type="button" class="btn btn-outline-dark fw-bold border-3" >CHECKOUT</button>
+        </a>
+        </div>
+      </div>
+    </div>
 </div>
