@@ -1,1 +1,59 @@
-<p>contact-us works!</p>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+            <div class="card shadow p-4 rounded">
+            <h2 class="text-center text-primary">Contact Us</h2>
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    formControlName="name"
+                    [class.is-invalid]="submitted && contactForm.controls['name'].invalid"
+                />
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.name.errors">
+                    Name is required.
+                </div>
+                </div>
+    
+                <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    formControlName="email"
+                    [class.is-invalid]="submitted && contactForm.controls['email'].invalid"
+                />
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.email.errors">
+                    Enter a valid email.
+                </div>
+                </div>
+    
+                <div class="mb-3">
+                <label for="message" class="form-label fw-bold">Message</label>
+                <textarea
+                    id="message"
+                    class="form-control"
+                    rows="4"
+                    formControlName="message"
+                    [class.is-invalid]="submitted && contactForm.controls['message'].invalid"
+                ></textarea>
+                <div class="invalid-feedback" *ngIf="submitted && contactForm.controls.message.errors">
+                    Message is required.
+                </div>
+                </div>
+    
+                <div class="d-grid">
+                <button type="submit" class="btn  btn-dark fw-bold border-3">Send Message</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <img src="/contact-us-showcase.png" width="730">
+        </div>
+        </div>
+    </div>  

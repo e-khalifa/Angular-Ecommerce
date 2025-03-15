@@ -1,34 +1,65 @@
-<!-- <p>{{productObj.title}}</p>
-<button class="btn btn-primary">Add to curt</button> -->
+<div class=" ms-4 mt-lg-3">
+    <span class="fw-semibold">
+        <a routerLinkActive="active"  routerLink="/home" class="text-decoration-none text-secondary fs-6" >HOME </a> 
+        <span class="text-secondary">
+            /
+        </span>
+        <a routerLinkActive="active"  routerLink="/products" class="text-decoration-none text-secondary fs-6" >PRODUCTS </a> 
+        <span class="text-secondary">
+            /
+        </span>
+        <span>
+            {{productObj.title|uppercase}}
+        </span>
+    </span>   
+</div>
 
 <div class="container my-5">
     <div class="row">
-        <div class="col-4">
+        <div class="col-sm-12 col-md-6 col-lg-5">
             <div>
-                <img *ngIf="productObj?.images?.length" class="mb-3" [src]="selectedImage || productObj.images[0]" class="img-thumbnail" alt="...">
-
+                <img *ngIf="productObj?.images?.length" class="mb-3" [src]="selectedImage || productObj.images[0]" class="img-thumbnail" [alt]="productObj.title">
             </div>
 
             @for (img of productObj.images; track $index) {
-                <img src={{img}} class="img-thumbnail mt-2" style="width: 4vw; cursor: pointer;" alt="..." (click)="getImag($event)">
+                <img src={{img}} class="img-thumbnail my-2" style="width: 100px; cursor: pointer;" [alt]="productObj.title" (click)="getImag($event)">
             }
         </div>
-        <div class="col-8 ">
-            <h2 class="mb-4">{{productObj.title}}</h2>
+        <div class="col-sm-12 col-md-6 col-lg-7 ">
+            <h2 class="my-sm-4 mt-md-0 mb-md-4">{{productObj.title}}</h2>
             <h4  class="mb-4">Price: {{productObj.price|currency:"EGP"}}</h4>
             <p class="w-75" style="font-size: large;">{{productObj.description}}</p>
             <h6>Category: {{productObj.category.name}}</h6>
-            <h4>Product Quantity</h4>
-            <div class="input-group my-4 w-25">
-                <button class="btn btn-primary" type="button" (click)="decreaseQuantity()">
+            <div class="input-group my-4 " style="width: 180px;">
+                <button class="btn btn-outline-dark fw-bold border-3" type="button" (click)="decreaseQuantity()">
                     <i class="bi bi-dash"></i>
                 </button>
                 <input type="text" id="quantity" class="form-control text-center" [value]="productQuantitiy" >
-                <button class="btn btn-primary" type="button" (click)="increaseQuantity()">
+                <button class="btn btn-outline-dark fw-bold border-3" type="button" (click)="increaseQuantity()">
                     <i class="bi bi-plus"></i>
                 </button>
             </div>
-            <button class="btn btn-primary  w-25" style="font-size: x-large;" (click)="addToCart()">Add to cart</button>
+            <button class="btn btn-outline-dark fw-bold border-3" style="width: 180px; font-size: x-large;">Add to cart</button>
         </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                <button class="nav-link" id="nav-reveiws-tab" data-bs-toggle="tab" data-bs-target="#nav-reveiws" type="button" role="tab" aria-controls="nav-reveiws" aria-selected="false">Reveiws</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="nav-description" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">{{productObj.description}}</div>
+            <div class="tab-pane fade p-3" id="nav-reveiws" role="tabpanel" aria-labelledby="nav-reveiws-tab" tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                At fuga obcaecati, rem quaerat assumenda illo, beatae omnis 
+                labore officia velit, minus esse aspernatur. 
+                Rerum, fuga voluptates. Eligendi tenetur fugit iste.
+            </div>
+            </div>
     </div>
 </div>
