@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
     this.myProducts.getAllData().subscribe({
       next: (data) => {
         this.allProductData = data
+        
       },
       error: (error) => {
         console.log(error);

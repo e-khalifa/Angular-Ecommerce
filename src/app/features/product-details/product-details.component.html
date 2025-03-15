@@ -29,17 +29,17 @@
             <h2 class="my-sm-4 mt-md-0 mb-md-4">{{productObj.title}}</h2>
             <h4  class="mb-4">Price: {{productObj.price|currency:"EGP"}}</h4>
             <p class="w-75" style="font-size: large;">{{productObj.description}}</p>
-            <h6>Category: {{productObj.category.name}}</h6>
+            <h6>Category: {{productObj.category}}</h6>
             <div class="input-group my-4 " style="width: 180px;">
-                <button class="btn btn-outline-dark fw-bold border-3" type="button" (click)="decreaseQuantity()">
+                <button class="btn btn-dark fw-bold border-3" type="button" (click)="decreaseQuantity()">
                     <i class="bi bi-dash"></i>
                 </button>
-                <input type="text" id="quantity" class="form-control text-center" [value]="productQuantitiy" >
-                <button class="btn btn-outline-dark fw-bold border-3" type="button" (click)="increaseQuantity()">
+                <input type="text" id="quantity" class="form-control fw-bold text-center" [value]="productQuantitiy" >
+                <button class="btn btn-dark fw-bold border-3" type="button" (click)="increaseQuantity()">
                     <i class="bi bi-plus"></i>
                 </button>
             </div>
-            <button class="btn btn-outline-dark fw-bold border-3" style="width: 180px; font-size: x-large;">Add to cart</button>
+            <button class="btn btn-dark fw-bold border-3" style="width: 180px; font-size: x-large;">Add to cart</button>
         </div>
     </div>
 </div>
@@ -48,17 +48,42 @@
     <div class="row">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
-                <button class="nav-link" id="nav-reveiws-tab" data-bs-toggle="tab" data-bs-target="#nav-reveiws" type="button" role="tab" aria-controls="nav-reveiws" aria-selected="false">Reveiws</button>
+                <button class="nav-link active fw-bold" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                <button class="nav-link fw-bold" id="nav-reveiws-tab" data-bs-toggle="tab" data-bs-target="#nav-reveiws" type="button" role="tab" aria-controls="nav-reveiws" aria-selected="false">Reveiws</button>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active p-3" id="nav-description" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">{{productObj.description}}</div>
+            <div class="tab-pane fade show active p-3 " id="nav-description" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"><h6>{{productObj.description}}</h6></div>
             <div class="tab-pane fade p-3" id="nav-reveiws" role="tabpanel" aria-labelledby="nav-reveiws-tab" tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                At fuga obcaecati, rem quaerat assumenda illo, beatae omnis 
-                labore officia velit, minus esse aspernatur. 
-                Rerum, fuga voluptates. Eligendi tenetur fugit iste.
+                <!-- PRODUCT REVIEWS -->
+                @for (review of productObj.reviews; track $index) {
+
+                    <div class="card mt-4 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start border-bottom py-3">
+                                <img src="user.png" class="rounded-circle me-3" alt="User" style="width: 3rem;">
+                                <div>
+                                    <h6 class="mb-1">{{review.reviewerName}}</h6>
+                                    
+                                <div class="text-warning">
+                                    <ng-container *ngFor="let star of [].constructor(getStarArray(review.rating).fullStars);">
+                                        <fa-icon [icon]="faStar"></fa-icon>
+                                    </ng-container>
+                                    <ng-container *ngIf="getStarArray(review.rating).halfStar">
+                                        <fa-icon [icon]="faStarHalfAlt"></fa-icon>
+                                    </ng-container>
+                                    <ng-container *ngFor="let empty of [].constructor(getStarArray(review.rating).emptyStars);">
+                                        <fa-icon [icon]="faStar" class="text-secondary"></fa-icon>
+                                    </ng-container>
+                                    </div>
+
+                                    <p class="mt-2">{{review.comment}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                <!--  -->
             </div>
             </div>
     </div>

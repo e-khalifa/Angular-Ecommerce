@@ -1,0 +1,1262 @@
+{
+    "products": [
+        {
+            "id": "83",
+            "title": "Blue & Black Check Shirt",
+            "description": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions.",
+            "category": "mens-shirts",
+            "price": 29.99,
+            "discountPercentage": 1.41,
+            "rating": 4.19,
+            "stock": 44,
+            "tags": [
+                "clothing",
+                "men's shirts"
+            ],
+            "brand": "Fashion Trends",
+            "sku": "6RJDTVCU",
+            "weight": 6,
+            "dimensions": {
+                "width": 17.25,
+                "height": 27.31,
+                "depth": 20.88
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Highly recommended!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mason Parker",
+                    "reviewerEmail": "mason.parker@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Avery Perez",
+                    "reviewerEmail": "avery.perez@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Nathan Reed",
+                    "reviewerEmail": "nathan.reed@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 4,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "8840720880947",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/thumbnail.png"
+        },
+        {
+            "id": "84",
+            "title": "Gigabyte Aorus Men Tshirt",
+            "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style.",
+            "category": "mens-shirts",
+            "price": 24.99,
+            "discountPercentage": 12.6,
+            "rating": 4.95,
+            "stock": 64,
+            "tags": [
+                "clothing",
+                "men's t-shirts"
+            ],
+            "brand": "Gigabyte",
+            "sku": "QA703Y60",
+            "weight": 2,
+            "dimensions": {
+                "width": 8.54,
+                "height": 23.52,
+                "depth": 5.66
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Highly recommended!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Logan Lawson",
+                    "reviewerEmail": "logan.lawson@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Great value for money!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Logan Lawson",
+                    "reviewerEmail": "logan.lawson@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Great value for money!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Oscar Powers",
+                    "reviewerEmail": "oscar.powers@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 4,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "3072645939073",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/thumbnail.png"
+        },
+        {
+            "id": "85",
+            "title": "Man Plaid Shirt",
+            "description": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions.",
+            "category": "mens-shirts",
+            "price": 34.99,
+            "discountPercentage": 17.53,
+            "rating": 3.66,
+            "stock": 65,
+            "tags": [
+                "clothing",
+                "men's shirts"
+            ],
+            "brand": "Classic Wear",
+            "sku": "TWL7HRBB",
+            "weight": 1,
+            "dimensions": {
+                "width": 29.56,
+                "height": 29.84,
+                "depth": 7.77
+            },
+            "warrantyInformation": "Lifetime warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 3,
+                    "comment": "Would not buy again!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Nora Mills",
+                    "reviewerEmail": "nora.mills@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Very disappointed!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Addison Ward",
+                    "reviewerEmail": "addison.ward@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Awesome product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Emily Brown",
+                    "reviewerEmail": "emily.brown@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "9383795178668",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/thumbnail.png"
+        },
+        {
+            "id": "86",
+            "title": "Man Short Sleeve Shirt",
+            "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look.",
+            "category": "mens-shirts",
+            "price": 19.99,
+            "discountPercentage": 8.65,
+            "rating": 4.62,
+            "stock": 20,
+            "tags": [
+                "clothing",
+                "men's shirts"
+            ],
+            "brand": "Casual Comfort",
+            "sku": "KEVGVDTV",
+            "weight": 2,
+            "dimensions": {
+                "width": 7.11,
+                "height": 28.63,
+                "depth": 27.54
+            },
+            "warrantyInformation": "5 year warranty",
+            "shippingInformation": "Ships in 2 weeks",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Great value for money!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Caleb Nelson",
+                    "reviewerEmail": "caleb.nelson@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Disappointing product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Emily Johnson",
+                    "reviewerEmail": "emily.johnson@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mila Hernandez",
+                    "reviewerEmail": "mila.hernandez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "8162805546713",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/thumbnail.png"
+        },
+        {
+            "id": "87",
+            "title": "Men Check Shirt",
+            "description": "The Men Check Shirt is a classic and versatile shirt featuring a stylish check pattern. Suitable for various occasions, it adds a smart and polished touch to your wardrobe.",
+            "category": "mens-shirts",
+            "price": 27.99,
+            "discountPercentage": 14.21,
+            "rating": 2.9,
+            "stock": 69,
+            "tags": [
+                "clothing",
+                "men's shirts"
+            ],
+            "brand": "Urban Chic",
+            "sku": "L902AU9L",
+            "weight": 1,
+            "dimensions": {
+                "width": 18.43,
+                "height": 6.96,
+                "depth": 20.73
+            },
+            "warrantyInformation": "3 year warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 1,
+                    "comment": "Would not buy again!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Elena Long",
+                    "reviewerEmail": "elena.long@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Very dissatisfied!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mason Parker",
+                    "reviewerEmail": "mason.parker@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Sofia Mitchell",
+                    "reviewerEmail": "sofia.mitchell@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "90 days return policy",
+            "minimumOrderQuantity": 8,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "1360512025227",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/thumbnail.png"
+        },
+        {
+            "id": "88",
+            "title": "Nike Air Jordan 1 Red And Black",
+            "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
+            "category": "mens-shoes",
+            "price": 149.99,
+            "discountPercentage": 15.82,
+            "rating": 2.77,
+            "stock": 15,
+            "tags": [
+                "footwear",
+                "athletic shoes"
+            ],
+            "brand": "Nike",
+            "sku": "84YC5J67",
+            "weight": 5,
+            "dimensions": {
+                "width": 19.29,
+                "height": 13.2,
+                "depth": 29.13
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 2,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Victoria McDonald",
+                    "reviewerEmail": "victoria.mcdonald@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mason Parker",
+                    "reviewerEmail": "mason.parker@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Avery Perez",
+                    "reviewerEmail": "avery.perez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 2,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "0098559139691",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/thumbnail.png"
+        },
+        {
+            "id": "89",
+            "title": "Nike Baseball Cleats",
+            "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
+            "category": "mens-shoes",
+            "price": 79.99,
+            "discountPercentage": 11.4,
+            "rating": 4.01,
+            "stock": 14,
+            "tags": [
+                "footwear",
+                "sports cleats"
+            ],
+            "brand": "Nike",
+            "sku": "81LRTRP5",
+            "weight": 7,
+            "dimensions": {
+                "width": 14.83,
+                "height": 19.16,
+                "depth": 28.98
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "William Gonzalez",
+                    "reviewerEmail": "william.gonzalez@x.dummyjson.com"
+                },
+                {
+                    "rating": 2,
+                    "comment": "Not worth the price!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Sophia Brown",
+                    "reviewerEmail": "sophia.brown@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Gabriel Mitchell",
+                    "reviewerEmail": "gabriel.mitchell@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 3,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "0517654748946",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/thumbnail.png"
+        },
+        {
+            "id": "90",
+            "title": "Puma Future Rider Trainers",
+            "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use.",
+            "category": "mens-shoes",
+            "price": 89.99,
+            "discountPercentage": 3.64,
+            "rating": 4.85,
+            "stock": 10,
+            "tags": [
+                "footwear",
+                "casual shoes"
+            ],
+            "brand": "Puma",
+            "sku": "64ORN32I",
+            "weight": 8,
+            "dimensions": {
+                "width": 14.58,
+                "height": 25.54,
+                "depth": 19.57
+            },
+            "warrantyInformation": "2 year warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Lucas Allen",
+                    "reviewerEmail": "lucas.allen@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Awesome product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mason Pearson",
+                    "reviewerEmail": "mason.pearson@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Hunter Gordon",
+                    "reviewerEmail": "hunter.gordon@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "90 days return policy",
+            "minimumOrderQuantity": 9,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "3562849555769",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/thumbnail.png"
+        },
+        {
+            "id": "91",
+            "title": "Sports Sneakers Off White & Red",
+            "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch.",
+            "category": "mens-shoes",
+            "price": 119.99,
+            "discountPercentage": 11.69,
+            "rating": 4.92,
+            "stock": 73,
+            "tags": [
+                "footwear",
+                "athletic shoes"
+            ],
+            "brand": "Off White",
+            "sku": "8SRWW2RM",
+            "weight": 3,
+            "dimensions": {
+                "width": 10.71,
+                "height": 19.23,
+                "depth": 19.85
+            },
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 3,
+                    "comment": "Not worth the price!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "James Garcia",
+                    "reviewerEmail": "james.garcia@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Nora Russell",
+                    "reviewerEmail": "nora.russell@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Excellent quality!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Aurora Rodriguez",
+                    "reviewerEmail": "aurora.rodriguez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "No return policy",
+            "minimumOrderQuantity": 5,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "3784445385582",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/thumbnail.png"
+        },
+        {
+            "id": "92",
+            "title": "Sports Sneakers Off White Red",
+            "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions.",
+            "category": "mens-shoes",
+            "price": 109.99,
+            "discountPercentage": 17.22,
+            "rating": 2.95,
+            "stock": 75,
+            "tags": [
+                "footwear",
+                "casual shoes"
+            ],
+            "brand": "Off White",
+            "sku": "1SFJZOT2",
+            "weight": 4,
+            "dimensions": {
+                "width": 18.32,
+                "height": 19.34,
+                "depth": 28.56
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Madeline Simpson",
+                    "reviewerEmail": "madeline.simpson@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Awesome product!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Mateo Nguyen",
+                    "reviewerEmail": "mateo.nguyen@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.623Z",
+                    "reviewerName": "Ethan Fletcher",
+                    "reviewerEmail": "ethan.fletcher@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "No return policy",
+            "minimumOrderQuantity": 3,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.623Z",
+                "updatedAt": "2024-05-23T08:56:21.623Z",
+                "barcode": "0839375107303",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/1.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/2.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/3.png",
+                "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/thumbnail.png"
+        },
+        {
+            "id": "177",
+            "title": "Black Women's Gown",
+            "description": "The Black Women's Gown is an elegant and timeless evening gown. With a sleek black design, it's perfect for formal events and special occasions, exuding sophistication and style.",
+            "category": "womens-dresses",
+            "price": 129.99,
+            "discountPercentage": 5.86,
+            "rating": 4.77,
+            "stock": 59,
+            "tags": [
+                "clothing",
+                "gowns"
+            ],
+            "sku": "CL0LXEBG",
+            "weight": 7,
+            "dimensions": {
+                "width": 22.4,
+                "height": 22.15,
+                "depth": 21.87
+            },
+            "warrantyInformation": "Lifetime warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Aria Flores",
+                    "reviewerEmail": "aria.flores@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Stella Hughes",
+                    "reviewerEmail": "stella.hughes@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Not as described!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Mason Pearson",
+                    "reviewerEmail": "mason.pearson@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 2,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.627Z",
+                "updatedAt": "2024-05-23T08:56:21.627Z",
+                "barcode": "3515162615847",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/thumbnail.png"
+        },
+        {
+            "id": "178",
+            "title": "Corset Leather With Skirt",
+            "description": "The Corset Leather With Skirt is a bold and edgy ensemble that combines a stylish corset with a matching skirt. Ideal for fashion-forward individuals, it makes a statement at any event.",
+            "category": "womens-dresses",
+            "price": 89.99,
+            "discountPercentage": 19.26,
+            "rating": 2.52,
+            "stock": 59,
+            "tags": [
+                "clothing",
+                "corsets",
+                "skirts"
+            ],
+            "sku": "TU384RG4",
+            "weight": 1,
+            "dimensions": {
+                "width": 19.1,
+                "height": 27.47,
+                "depth": 29.95
+            },
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 3,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Mason Parker",
+                    "reviewerEmail": "mason.parker@x.dummyjson.com"
+                },
+                {
+                    "rating": 3,
+                    "comment": "Would not recommend!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Grace Green",
+                    "reviewerEmail": "grace.green@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Madison Stewart",
+                    "reviewerEmail": "madison.stewart@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "60 days return policy",
+            "minimumOrderQuantity": 4,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.627Z",
+                "updatedAt": "2024-05-23T08:56:21.627Z",
+                "barcode": "5612433310069",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/thumbnail.png"
+        },
+        {
+            "id": "179",
+            "title": "Corset With Black Skirt",
+            "description": "The Corset With Black Skirt is a chic and versatile outfit that pairs a fashionable corset with a classic black skirt. It offers a trendy and coordinated look for various occasions.",
+            "category": "womens-dresses",
+            "price": 79.99,
+            "discountPercentage": 14.61,
+            "rating": 3,
+            "stock": 67,
+            "tags": [
+                "clothing",
+                "corsets",
+                "skirts"
+            ],
+            "sku": "KM6VKT38",
+            "weight": 6,
+            "dimensions": {
+                "width": 9.79,
+                "height": 26.72,
+                "depth": 14.21
+            },
+            "warrantyInformation": "Lifetime warranty",
+            "shippingInformation": "Ships in 2 weeks",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Nolan Bryant",
+                    "reviewerEmail": "nolan.bryant@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Julian Newton",
+                    "reviewerEmail": "julian.newton@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Elena Baker",
+                    "reviewerEmail": "elena.baker@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "No return policy",
+            "minimumOrderQuantity": 3,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.627Z",
+                "updatedAt": "2024-05-23T08:56:21.627Z",
+                "barcode": "1585516684321",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/thumbnail.png"
+        },
+        {
+            "id": "180",
+            "title": "Dress Pea",
+            "description": "The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casual outings, it adds a playful and fun element to your wardrobe, making it a great choice for day-to-day wear.",
+            "category": "womens-dresses",
+            "price": 49.99,
+            "discountPercentage": 9.81,
+            "rating": 2.92,
+            "stock": 29,
+            "tags": [
+                "clothing",
+                "dresses"
+            ],
+            "sku": "EOSIQZU7",
+            "weight": 7,
+            "dimensions": {
+                "width": 22.66,
+                "height": 19.32,
+                "depth": 6.3
+            },
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Chloe Morales",
+                    "reviewerEmail": "chloe.morales@x.dummyjson.com"
+                },
+                {
+                    "rating": 2,
+                    "comment": "Would not buy again!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Levi Hicks",
+                    "reviewerEmail": "levi.hicks@x.dummyjson.com"
+                },
+                {
+                    "rating": 3,
+                    "comment": "Not as described!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Nicholas Edwards",
+                    "reviewerEmail": "nicholas.edwards@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "90 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.627Z",
+                "updatedAt": "2024-05-23T08:56:21.627Z",
+                "barcode": "8423169561887",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/thumbnail.png"
+        },
+        {
+            "id": "181",
+            "title": "Marni Red & Black Suit",
+            "description": "The Marni Red & Black Suit is a sophisticated and fashion-forward suit ensemble. With a combination of red and black tones, it showcases a modern design for a bold and confident look.",
+            "category": "womens-dresses",
+            "price": 179.99,
+            "discountPercentage": 15.4,
+            "rating": 4.17,
+            "stock": 15,
+            "tags": [
+                "clothing",
+                "suits"
+            ],
+            "sku": "MWF43VM5",
+            "weight": 4,
+            "dimensions": {
+                "width": 24.67,
+                "height": 16.15,
+                "depth": 14.69
+            },
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Would buy again!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Nathan Dixon",
+                    "reviewerEmail": "nathan.dixon@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Poor quality!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Chloe Morales",
+                    "reviewerEmail": "chloe.morales@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.627Z",
+                    "reviewerName": "Nicholas Edwards",
+                    "reviewerEmail": "nicholas.edwards@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 4,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.627Z",
+                "updatedAt": "2024-05-23T08:56:21.627Z",
+                "barcode": "4670281112327",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-dresses/Marni%20Red%20&%20Black%20Suit/thumbnail.png"
+        },
+        {
+            "id": "186",
+            "title": "Calvin Klein Heel Shoes",
+            "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble.",
+            "category": "womens-shoes",
+            "price": 79.99,
+            "discountPercentage": 11.39,
+            "rating": 4.06,
+            "stock": 99,
+            "tags": [
+                "footwear",
+                "heel shoes"
+            ],
+            "brand": "Calvin Klein",
+            "sku": "9U4PYRXS",
+            "weight": 1,
+            "dimensions": {
+                "width": 15.41,
+                "height": 18.83,
+                "depth": 18.69
+            },
+            "warrantyInformation": "1 week warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Ella Adams",
+                    "reviewerEmail": "ella.adams@x.dummyjson.com"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Lillian Bishop",
+                    "reviewerEmail": "lillian.bishop@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Awesome product!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Aria Roberts",
+                    "reviewerEmail": "aria.roberts@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "60 days return policy",
+            "minimumOrderQuantity": 3,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.628Z",
+                "updatedAt": "2024-05-23T08:56:21.628Z",
+                "barcode": "0909273919848",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/thumbnail.png"
+        },
+        {
+            "id": "187",
+            "title": "Golden Shoes Woman",
+            "description": "The Golden Shoes for Women are a glamorous choice for special occasions. Featuring a golden hue and stylish design, they add a touch of luxury to your outfit.",
+            "category": "womens-shoes",
+            "price": 49.99,
+            "discountPercentage": 14.93,
+            "rating": 4.82,
+            "stock": 99,
+            "tags": [
+                "footwear",
+                "women's shoes"
+            ],
+            "brand": "Fashion Diva",
+            "sku": "U52NOLI2",
+            "weight": 3,
+            "dimensions": {
+                "width": 15.32,
+                "height": 27.84,
+                "depth": 21.06
+            },
+            "warrantyInformation": "5 year warranty",
+            "shippingInformation": "Ships in 1-2 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Excellent quality!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Owen Fisher",
+                    "reviewerEmail": "owen.fisher@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Xavier Wright",
+                    "reviewerEmail": "xavier.wright@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "William Gonzalez",
+                    "reviewerEmail": "william.gonzalez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "No return policy",
+            "minimumOrderQuantity": 19,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.628Z",
+                "updatedAt": "2024-05-23T08:56:21.628Z",
+                "barcode": "0008484295237",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/thumbnail.png"
+        },
+        {
+            "id": "188",
+            "title": "Pampi Shoes",
+            "description": "Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile design, they are suitable for various casual occasions, providing a trendy and relaxed look.",
+            "category": "womens-shoes",
+            "price": 29.99,
+            "discountPercentage": 0.3,
+            "rating": 3.01,
+            "stock": 36,
+            "tags": [
+                "footwear",
+                "casual shoes"
+            ],
+            "brand": "Pampi",
+            "sku": "MJGF2DUO",
+            "weight": 3,
+            "dimensions": {
+                "width": 22.13,
+                "height": 23.43,
+                "depth": 28.61
+            },
+            "warrantyInformation": "2 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 3,
+                    "comment": "Waste of money!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Grace Green",
+                    "reviewerEmail": "grace.green@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Aubrey Garcia",
+                    "reviewerEmail": "aubrey.garcia@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Logan Lee",
+                    "reviewerEmail": "logan.lee@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "60 days return policy",
+            "minimumOrderQuantity": 9,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.628Z",
+                "updatedAt": "2024-05-23T08:56:21.628Z",
+                "barcode": "9067128136436",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/thumbnail.png"
+        },
+        
+        {
+            "id": "189",
+            "title": "Red Shoes",
+            "description": "The Red Shoes make a bold statement with their vibrant red color. Whether for a party or a casual outing, these shoes add a pop of color and style to your wardrobe.",
+            "category": "womens-shoes",
+            "price": 34.99,
+            "discountPercentage": 0.01,
+            "rating": 4.23,
+            "stock": 53,
+            "tags": [
+                "footwear",
+                "women's shoes"
+            ],
+            "brand": "Fashion Express",
+            "sku": "H8JNELSB",
+            "weight": 5,
+            "dimensions": {
+                "width": 29.75,
+                "height": 12.3,
+                "depth": 26.41
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Ethan Martinez",
+                    "reviewerEmail": "ethan.martinez@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Christopher West",
+                    "reviewerEmail": "christopher.west@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Excellent quality!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Mila Hernandez",
+                    "reviewerEmail": "mila.hernandez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 17,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.628Z",
+                "updatedAt": "2024-05-23T08:56:21.628Z",
+                "barcode": "6076832823797",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/thumbnail.png"
+        },
+        {
+            "id": "189",
+            "title": "Red Shoes",
+            "description": "The Red Shoes make a bold statement with their vibrant red color. Whether for a party or a casual outing, these shoes add a pop of color and style to your wardrobe.",
+            "category": "womens-shoes",
+            "price": 34.99,
+            "discountPercentage": 0.01,
+            "rating": 4.23,
+            "stock": 53,
+            "tags": [
+                "footwear",
+                "women's shoes"
+            ],
+            "brand": "Fashion Express",
+            "sku": "H8JNELSB",
+            "weight": 5,
+            "dimensions": {
+                "width": 29.75,
+                "height": 12.3,
+                "depth": 26.41
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships overnight",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Ethan Martinez",
+                    "reviewerEmail": "ethan.martinez@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Fast shipping!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Christopher West",
+                    "reviewerEmail": "christopher.west@x.dummyjson.com"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Excellent quality!",
+                    "date": "2024-05-23T08:56:21.628Z",
+                    "reviewerName": "Mila Hernandez",
+                    "reviewerEmail": "mila.hernandez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 17,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.628Z",
+                "updatedAt": "2024-05-23T08:56:21.628Z",
+                "barcode": "6076832823797",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/1.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/2.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/3.png",
+                "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/4.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/thumbnail.png"
+        }
+    ]
+}

@@ -1,13 +1,13 @@
-<a routerLink="/products/:id">
+<!-- <a routerLink="/products/{{oneProduct.id}}"> -->
 <div class="my-5">
-<a routerLink="/products/{{oneProduct.id}}">
-<div class="my-5 flex-row">
-    <div class="card text-center" style="width: 18rem;">
-        <img src={{oneProduct.images[0]}} class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">{{oneProduct.title}}</p>
-            <p class="card-text">{{oneProduct.price}}$</p>
+        <div class="my-5 flex-row">
+            <div class="card text-center shadow" style="width: 18rem; height: 28rem;">
+                <img src={{oneProduct.images[0]}} class="card-img-top" [alt]="oneProduct.title">
+                <div class="card-body bg-dark">
+                    <h5 class="card-text text-light">{{oneProduct.title}}</h5>
+                    <h6 class="card-text text-light my-3">{{oneProduct.price|currency:"EGP"}}</h6>
+                    <a routerLink="/products/{{oneProduct.id}}" class="btn btn-light fw-bold">Show Detailes</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</a>
+    
