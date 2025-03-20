@@ -8,7 +8,7 @@ export class ProductsService {
 
   constructor(private myClient : HttpClient) { }
 
-  private URLData = "http://localhost:5000/products"
+  private URLData = "http://localhost:3000/products"
   getAllData(){
     console.log(this.myClient.get(this.URLData));
     return this.myClient.get(this.URLData)
