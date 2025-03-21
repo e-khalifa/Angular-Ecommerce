@@ -36,7 +36,6 @@ npx json-server --watch data.json --port 3000
 ```
 This will serve mock backend data at `http://localhost:3000/`
 
----
 ### 💳 Billing Information
 For testing the billing system, use the following details:
 
