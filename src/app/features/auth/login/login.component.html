@@ -1,8 +1,8 @@
-<div class="card shadow-lg p-4 mx-auto my-5" style="max-width: 500px; width: 80%">
+<div class="card shadow p-4 rounded mx-auto my-5" style="max-width: 500px; width: 80%">
     <h2 class="fw-bold text-primary mb-3 mx-auto">Sign In</h2>
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="row g-3">
         <div class="col-12">
-            <label for="inputEmail4" class="form-label">Email Address</label>
+            <label for="inputEmail4" class="form-label fw-bold">Email Address</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                 <input type="email" class="form-control" id="inputEmail4" formControlName="email"
@@ -18,7 +18,7 @@
             }
         </div>
         <div class="col-12">
-            <label for="inputPassword4" class="form-label">Password</label>
+            <label for="inputPassword4" class="form-label fw-bold">Password</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                 <input type="password" class="form-control" id="inputPassword4" formControlName="password"
@@ -28,10 +28,11 @@
             <div class="text-danger mt-1 fs-6">Incorrect password. Please try again</div>
             }
         </div>
-        <p>Don't have an account? <a routerLink="/register" routerLinkActive="active"
-                style="text-decoration: underline; color: blue; cursor: pointer">Sign up instead</a></p>
+        <p>Don't have an account? <a routerLink="/register" routerLinkActive="active" style="text-decoration: none">Sign
+                up instead</a></p>
         <div class=" col-12">
-            <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">Sign In</button>
+            <button type="submit" class="btn  btn-dark fw-bold border-3 w-100" [disabled]="loginForm.invalid">Sign
+                In</button>
         </div>
     </form>
 </div>

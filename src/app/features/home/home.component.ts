@@ -15,11 +15,12 @@ import { OneProductComponent } from '../one-product/one-product.component';
 export class HomeComponent implements OnInit {
   userId: any;
   user?: User;
-  allProductData:any;
-  constructor(private myProducts: ProductsService, private myUserService: UsersService) {}
+  allProductData: any;
+  constructor(private myProducts: ProductsService, private myUserService: UsersService) { }
 
   ngOnInit(): void {
-    this.userId = localStorage.getItem('userId');
+    const token = localStorage.getItem('token');
+    const userId = token ? atob(token) : null;
     if (this.userId) {
       this.myUserService.getUserById(this.userId).subscribe({
         next: (data) => { this.user = data as User },
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
 
     this.myProducts.getAllData().subscribe({
       next: (data) => {
-        this.allProductData =data;
+        this.allProductData = data;
         console.log(this.allProductData);
         // if (this.allProductData.products && Array.isArray(this.allProductData.products)) {
         //   this.allProductData = this.shuffleArray(this.allProductData.products);

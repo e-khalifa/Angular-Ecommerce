@@ -17,7 +17,7 @@ import { UsersService } from '../../../services/users.service';
 export class LoginComponent implements OnInit {
   usersData: any;
 
-  constructor(private myUserService: UsersService, private router: Router) {}
+  constructor(private myUserService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
     const token = localStorage.getItem('token');

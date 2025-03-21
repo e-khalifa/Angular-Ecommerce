@@ -1,10 +1,9 @@
 <main class="profile-content">
   <div class="profile-header">
     <div class="avatar-container">
-      <img [src]="user.avatar" class="avatar" />
+      <img [src]="user.avatar || 'profileImgRemove.png'" class="avatar" />
       <label for="upload-photo" class="upload-icon">📷</label>
-      <input type="file" id="upload-photo" hidden
-        (change)="uploadPhoto($event)" />
+      <input type="file" id="upload-photo" hidden (change)="uploadPhoto($event)" />
     </div>
     <div class="button-group">
       <button (click)="triggerFileInput()" class="upload-btn">Upload
@@ -17,26 +16,25 @@
     <div class="form-row">
       <div class="form-group">
         <label>First Name *</label>
-        <input type="text" [(ngModel)]="user.fName" name="firstName"
-          class="form-control" [readonly]="!isEditing" required />
+        <input type="text" [(ngModel)]="user.fName" name="firstName" class="form-control" [readonly]="!isEditing"
+          required />
       </div>
       <div class="form-group">
         <label>Last Name *</label>
-        <input type="text" [(ngModel)]="user.lName" name="lastName"
-          class="form-control" [readonly]="!isEditing" required />
+        <input type="text" [(ngModel)]="user.lName" name="lastName" class="form-control" [readonly]="!isEditing"
+          required />
       </div>
     </div>
 
     <div class="form-row">
       <div class="form-group">
         <label>Email</label>
-        <input type="email" [(ngModel)]="user.email" name="email"
-          class="form-control" [readonly]="!isEditing" />
+        <input type="email" [(ngModel)]="user.email" name="email" class="form-control" [readonly]="!isEditing" />
       </div>
       <div class="form-group">
         <label>Mobile Number *</label>
-        <input type="tel" [(ngModel)]="user.mobile" name="mobile"
-          class="form-control" [readonly]="!isEditing" required />
+        <input type="tel" [(ngModel)]="user.mobile" name="mobile" class="form-control" [readonly]="!isEditing"
+          required />
       </div>
     </div>
 
@@ -44,18 +42,15 @@
       <label>Gender</label>
       <div class="gender-options">
         <label>
-          <input type="radio" name="gender" value="Male"
-            [(ngModel)]="user.gender" [disabled]="!isEditing" /> Male
+          <input type="radio" name="gender" value="Male" [(ngModel)]="user.gender" [disabled]="!isEditing" /> Male
         </label>
         <label>
-          <input type="radio" name="gender" value="Female"
-            [(ngModel)]="user.gender" [disabled]="!isEditing" /> Female
+          <input type="radio" name="gender" value="Female" [(ngModel)]="user.gender" [disabled]="!isEditing" /> Female
         </label>
       </div>
     </div>
     <div class="btn-container">
-      <button type="button" (click)="toggleEdit()" class="btn"
-        *ngIf="!isEditing">Edit Info</button>
+      <button type="button" (click)="toggleEdit()" class="btn" *ngIf="!isEditing">Edit Info</button>
       <button type="submit" class="btn" *ngIf="isEditing">Save Changes</button>
     </div>
   </form>

@@ -74,8 +74,8 @@ export class RegisterComponent implements OnInit {
 
       this.myUserService.addANewUser(newUser).subscribe({
         next: () => {
-          console.log('User registered:', newUser.id);
-          localStorage.setItem('userId', newUser.id);
+          const token = btoa(newUser.id);
+          localStorage.setItem('token', token);
           this.router.navigate(['/home']);
         },
         error: (err) => {

@@ -1,13 +1,13 @@
 <div class="orders">
-  <div class="order-card" *ngFor="let order of orders">
-    <img [src]="order.image" [alt]="order.name" class="order-image" />
+  <div class="order-card" *ngFor="let order of user.orders">
+    <img [src]="order.items[0]?.images[0]" [alt]="order.items[0]?.name" class="order-image" />
     <div class="order-details">
-      <h3 class="order-title">{{ order.name }}</h3>
-      <p class="order-description">{{ order.description }}</p>
+      <h3 class="order-date">{{ order.date }}</h3>
+      <p class="order-description">Contains {{ order.items.length }} items</p>
     </div>
     <div class="order-price">
-      <span class="price">{{ order.price }}</span>
-      <p class="quantity">{{ order.quantity }} piece</p>
+      <span class="price">${{ order.total }}</span>
+      <p class="quantity">{{ order.items.length }} items</p>
     </div>
   </div>
 </div>

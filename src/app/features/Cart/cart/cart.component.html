@@ -1,21 +1,21 @@
-
 <div class=" ms-4 mt-2 mt-lg-5 "> <!--Bread crumb-->
     <span class="fw-semibold">
-        <a routerLinkActive="active"  routerLink="/home" class="text-decoration-none text-secondary fs-6" data-bs-dismiss="offcanvas" aria-label="Close">HOME </a> 
+        <a routerLinkActive="active" routerLink="/home" class="text-decoration-none text-secondary fs-6"
+            data-bs-dismiss="offcanvas" aria-label="Close">HOME </a>
         <span class="text-secondary">
-             /
+            /
         </span>
         <span>
-             CART
+            CART
         </span>
-    </span>   
+    </span>
 </div>
-<div class="" *ngIf="cart.length===0; else emptyCart" >
-        <app-cart-items></app-cart-items>
-</div>
-<ng-template    #emptyCart>
+<div class="" *ngIf="cart.length===0; else emptyCart">
     <app-cart-items></app-cart-items>
+</div>
+<ng-template #emptyCart>
+    <div class="w-50 my-5 mx-auto">
+        <app-cart-items></app-cart-items>
+    </div>
     <app-cart-total></app-cart-total>
 </ng-template>
-
-

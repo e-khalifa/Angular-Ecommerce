@@ -1,28 +1,27 @@
 <div class="custom-background vh-100 vw-98">
-    <div class="bg-text ">
-        <h1 class="fs-1 fw-bold">STYLIST PICKS BEAT</h1>
-        <H1 class="fs-1 fw-bold">THE HEAT</H1>
-        <button routerLink="/products" class="btn btn-outline-light fs-3 fw-bold m-3">SHOP NOW</button>
-    </div>
+  <div class="bg-text ">
+    <h1 class="fs-1 fw-bold">STYLIST PICKS BEAT</h1>
+    <H1 class="fs-1 fw-bold">THE HEAT</H1>
+    <button routerLink="/products" class="btn btn-outline-light fs-3 fw-bold m-3">SHOP NOW</button>
+  </div>
 </div>
 
 <div class="custom-container">
   <div>
     <h2 class="text-center my-5">Discover New Arrivals</h2>
-    <h4 class="text-secondary text-center my-5">Recently Added Shirts !</h4>
+    <h4 class="text-secondary text-center my-5">Recently Added Items!</h4>
   </div>
   <div class="d-flex flex-wrap justify-content-between container">
 
-        @for (product of allProductData; track $index) {
-          <app-one-product [oneProduct]="product"></app-one-product>
-            }
+    @for (product of allProductData; track $index) {
+    <app-one-product [oneProduct]="product"></app-one-product>
+    }
 
   </div>
 
   <div class="d-flex">
     <div class="d-flex">
-      <div class="p-3"><i
-          class="bi bi-truck fs-3 text-primary-emphasis"></i></div>
+      <div class="p-3"><i class="bi bi-truck fs-3 text-primary-emphasis"></i></div>
       <div class="p-3">
         <h6 class="fw-bold">FREE SHIPPING</h6>
         <h6 class="text-secondary">Enjoy free shipping on all orders above
@@ -30,8 +29,7 @@
       </div>
     </div>
     <div class="d-flex">
-      <div class="p-3"><i
-          class="bi bi-clock fs-3 text-primary-emphasis"></i></div>
+      <div class="p-3"><i class="bi bi-clock fs-3 text-primary-emphasis"></i></div>
       <div class="p-3">
         <h6 class="fw-bold">SUPPORT 24/7</h6>
         <h6 class="text-secondary">Our support team is there to help you for
@@ -39,8 +37,7 @@
       </div>
     </div>
     <div class="d-flex">
-      <div class="p-3"><i
-          class="bi bi-arrow-clockwise fs-3 text-primary-emphasis"></i></div>
+      <div class="p-3"><i class="bi bi-arrow-clockwise fs-3 text-primary-emphasis"></i></div>
       <div class="p-3">
         <h6 class="fw-bold">30 DAY RETURN</h6>
         <h6 class="text-secondary">Simply return it whithin 30 days for an
@@ -48,8 +45,7 @@
       </div>
     </div>
     <div class="d-flex">
-      <div class="p-3"><i
-          class="bi bi-fingerprint fs-3 text-primary-emphasis"></i></div>
+      <div class="p-3"><i class="bi bi-fingerprint fs-3 text-primary-emphasis"></i></div>
       <div class="p-3">
         <h6 class="fw-bold">100% PAYMENT SECURE</h6>
         <h6 class="text-secondary">Our payment are secured with 256 bit
@@ -58,22 +54,22 @@
     </div>
   </div>
 
-    <div class="container vw-98 d-flex justify-content-center align-items-center">
-        <div class="row w-100 justify-content-between align-items-center">
-            <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col-5">
-                <h2 style="margin-top: 6rem; font-size: 3rem;">PEACE OF MIND</h2>
-                <P>A one-stop platform for all your fashion needs,</P>
-                <p>hassle-free. Buy With A Peace Of Mind .</p>
-                <button routerLink="/products" class="btn btn-light btn-outline-subtle fw-bold border-3">Buy Now</button>
-            </div>
-            <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col">
-                <h2 style="margin-top: 6rem; font-size: 3rem;">BUY 2 GET 1 FREE</h2>
-                <P>End of season sale. Buy any 2 items of your choice</P>
-                <p>and get 1 free</p>
-                <button routerLink="/products" class="btn btn-light btn-outline-subtle fw-bold border-3">Buy Now</button>
-            </div>
-        </div>
+  <div class="container vw-98 d-flex justify-content-center align-items-center">
+    <div class="row w-100 justify-content-between align-items-center">
+      <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col-5">
+        <h2 style="margin-top: 6rem; font-size: 3rem;">PEACE OF MIND</h2>
+        <P>A one-stop platform for all your fashion needs,</P>
+        <p>hassle-free. Buy With A Peace Of Mind .</p>
+        <button routerLink="/products" class="btn btn-light btn-outline-subtle fw-bold border-3">Buy Now</button>
+      </div>
+      <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col">
+        <h2 style="margin-top: 6rem; font-size: 3rem;">BUY 2 GET 1 FREE</h2>
+        <P>End of season sale. Buy any 2 items of your choice</P>
+        <p>and get 1 free</p>
+        <button routerLink="/products" class="btn btn-light btn-outline-subtle fw-bold border-3">Buy Now</button>
+      </div>
     </div>
+  </div>
 
   <div class="text-center m-5">
     <h2>TOP SELLERS</h2>
@@ -82,14 +78,13 @@
 
   <div class="d-flex flex-wrap justify-content-between container">
     @for (product of allProductData; track $index) {
-    @if (product.id>8 && product.id<12) { <app-one-product
-      [oneProduct]="product"></app-one-product>
-    }
+    @if (product.id>8 && product.id<12) { <app-one-product [oneProduct]="product"></app-one-product>
+      }
 
-            }
-    </div>
-    <div class="text-center">
-        <button routerLink="/products" class="btn btn-dark fs-3 mb-5">SHOP NOW</button>
-    </div>
+      }
+  </div>
+  <div class="text-center">
+    <button routerLink="/products" class="btn btn-dark fs-3 mb-5">SHOP NOW</button>
+  </div>
 
 </div>

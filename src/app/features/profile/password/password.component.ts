@@ -14,10 +14,11 @@ export class PasswordComponent implements OnInit {
   showPassword: boolean = false;
   isEditing: boolean = false;
 
-  constructor(private userService: UsersService) {}
+  constructor(private userService: UsersService) { }
 
   ngOnInit(): void {
-    const userId = localStorage.getItem('userId');
+    const token = localStorage.getItem('token');
+    const userId = token ? atob(token) : null;
 
     if (userId) {
       this.userService.getUserById(userId).subscribe({

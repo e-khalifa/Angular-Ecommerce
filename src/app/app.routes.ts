@@ -29,7 +29,7 @@ export const routes: Routes = [
   { path: 'cart', component: CartComponent, title: 'Cart' },
   { path: 'about', component: AboutComponent, title: 'About' },
   { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
-  { path: 'checkout', component: CheckoutComponent, title: 'Checkout' },
+  { path: 'checkout', component: CheckoutComponent, title: 'Checkout', canActivate: [AuthGuard] },
   {
     path: 'profile',
     component: ProfileComponent,
