@@ -11,52 +11,50 @@
     <h2 class="text-center my-5">Discover New Arrivals</h2>
     <h4 class="text-secondary text-center my-5">Recently Added Items!</h4>
   </div>
-  <div class="d-flex flex-wrap justify-content-between container">
-
+  <div class="container d-flex flex-wrap justify-content-center gap-4">
     @for (product of allProductData; track $index) {
     <app-one-product [oneProduct]="product"></app-one-product>
     }
 
   </div>
 
-  <div class="d-flex">
-    <div class="d-flex">
-      <div class="p-3"><i class="bi bi-truck fs-3 text-primary-emphasis"></i></div>
-      <div class="p-3">
-        <h6 class="fw-bold">FREE SHIPPING</h6>
-        <h6 class="text-secondary">Enjoy free shipping on all orders above
-          100$</h6>
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
+        <div class="p-3"><i class="bi bi-truck fs-3 text-primary-emphasis"></i></div>
+        <div class="p-3">
+          <h6 class="fw-bold">FREE SHIPPING</h6>
+          <h6 class="text-secondary">Enjoy free shipping on all orders above $100</h6>
+        </div>
       </div>
-    </div>
-    <div class="d-flex">
-      <div class="p-3"><i class="bi bi-clock fs-3 text-primary-emphasis"></i></div>
-      <div class="p-3">
-        <h6 class="fw-bold">SUPPORT 24/7</h6>
-        <h6 class="text-secondary">Our support team is there to help you for
-          queries</h6>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
+        <div class="p-3"><i class="bi bi-clock fs-3 text-primary-emphasis"></i></div>
+        <div class="p-3">
+          <h6 class="fw-bold">SUPPORT 24/7</h6>
+          <h6 class="text-secondary">Our support team is there to help you for queries</h6>
+        </div>
       </div>
-    </div>
-    <div class="d-flex">
-      <div class="p-3"><i class="bi bi-arrow-clockwise fs-3 text-primary-emphasis"></i></div>
-      <div class="p-3">
-        <h6 class="fw-bold">30 DAY RETURN</h6>
-        <h6 class="text-secondary">Simply return it whithin 30 days for an
-          exchange</h6>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
+        <div class="p-3"><i class="bi bi-arrow-clockwise fs-3 text-primary-emphasis"></i></div>
+        <div class="p-3">
+          <h6 class="fw-bold">30 DAY RETURN</h6>
+          <h6 class="text-secondary">Simply return it within 30 days for an exchange</h6>
+        </div>
       </div>
-    </div>
-    <div class="d-flex">
-      <div class="p-3"><i class="bi bi-fingerprint fs-3 text-primary-emphasis"></i></div>
-      <div class="p-3">
-        <h6 class="fw-bold">100% PAYMENT SECURE</h6>
-        <h6 class="text-secondary">Our payment are secured with 256 bit
-          encryption</h6>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
+        <div class="p-3"><i class="bi bi-fingerprint fs-3 text-primary-emphasis"></i></div>
+        <div class="p-3">
+          <h6 class="fw-bold">100% PAYMENT SECURE</h6>
+          <h6 class="text-secondary">Our payment is secured with 256-bit encryption</h6>
+        </div>
       </div>
     </div>
   </div>
 
+
   <div class="container vw-98 d-flex justify-content-center align-items-center">
     <div class="row w-100 justify-content-between align-items-center">
-      <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col-5">
+      <div class="border border-dark bg-black text-white text-center mx-3 my-5 peace col-5 d-none d-lg-block">
         <h2 style="margin-top: 6rem; font-size: 3rem;">PEACE OF MIND</h2>
         <P>A one-stop platform for all your fashion needs,</P>
         <p>hassle-free. Buy With A Peace Of Mind .</p>

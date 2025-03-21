@@ -1,41 +1,41 @@
 <div class="bg-secondary-subtle">
-    <div class="custom-container py-4" >
-        <div class="d-flex justify-content-between">
-            <div>
+    <div class="container py-4">
+        <div class="row text-center text-md-start">
+            <!-- Company Info -->
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
                 <h6 class="my-4">COMPANY INFO</h6>
-                <a class="nav-link" routerLink="/about" routerLinkActive="active">Abouts Us</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Latest Posts</a>
-                <a class="nav-link" routerLink="/contactus" routerLinkActive="active">Contact US</a>
-                <a class="nav-link" routerLink="/products" routerLinkActive="active">Shop</a>
+                <a class="nav-link" routerLink="/about">About Us</a>
+                <a class="nav-link" routerLink="/home">Latest Posts</a>
+                <a class="nav-link" routerLink="/contactus">Contact Us</a>
+                <a class="nav-link" routerLink="/products">Shop</a>
             </div>
-            <div>
-                <h6 class="my-4">HELP LINKS</h6>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Tracking</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Order Status</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Delivery</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Shipping Info</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">FAQ</a>
-            </div>
-            <div>
+
+            <!-- Useful Links -->
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
                 <h6 class="my-4">USEFUL LINKS</h6>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Special Offers</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Gift Cards</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Advertising</a>
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Terms of use</a>
+                <a class="nav-link" routerLink="/home">Special Offers</a>
+                <a class="nav-link" routerLink="/home">Gift Cards</a>
             </div>
-            <div>
-                <h6 class="my-4">GET IN THE KNOW</h6>
-                <input type="text" placeholder="Enter email" class="bg-secondary-subtle border-0">
-                <button class="bg-secondary-subtle border-0">></button>
+
+            <!-- Contact Us / Subscribe -->
+            <div class="col-12 col-md-4 mb-3">
+                <h6 class="my-4">CONTACT US</h6>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <input type="text" placeholder="Enter email" class="form-control bg-light border-0 me-2">
+                    <button class="btn btn-dark">></button>
+                </div>
             </div>
         </div>
+
         <hr>
-        <div>
-            <div class="p-1">
-                <p>&copy; 2025 VOYEZ eCommerce</p>
-                <p>Privacy Policy       Terms&Conditions</p>
-            </div>
-            <div></div>
+
+        <!-- Copyright & Policies -->
+        <div class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
+            <p class="mb-1">&copy; 2025 VOYEZ eCommerce</p>
+            <p class="mb-1">
+                <a href="#" class="text-decoration-none text-dark">Privacy Policy</a> |
+                <a href="#" class="text-decoration-none text-dark">Terms & Conditions</a>
+            </p>
         </div>
     </div>
 </div>
