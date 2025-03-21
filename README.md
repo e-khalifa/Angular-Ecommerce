@@ -1,5 +1,5 @@
 # Voyez
-Voyez is a modern e-commerce application built using Angular for the frontend and JSON Server as a mock backend. It provides a seamless shopping experience with features like cart management, product browsing, and a billing system.
+Voyez is a modern e-commerce application built using Angular, Bootstrap, and JSON Server. It provides a seamless shopping experience with features like cart management, product browsing, and a billing system.
 
 ## Table of Contents
 1. [📸 Demo](#-demo)
@@ -8,7 +8,7 @@ Voyez is a modern e-commerce application built using Angular for the frontend an
 
 ## 📸 Demo
 <div>
-<img src="https://github.com/e-khalifa/Dragon_Quest_Game/blob/main/Assets/Sprites/Screenshots/demo.gif">
+<img src="https://github.com/e-khalifa/Angular-Ecommerce/blob/main/public/demo/demo.gif">
 <div>
 
 ## 🚀 Getting Started
@@ -36,7 +36,6 @@ npx json-server --watch data.json --port 3000
 ```
 This will serve mock backend data at `http://localhost:3000/`
 
----
 ### 💳 Billing Information
 For testing the billing system, use the following details:
 
