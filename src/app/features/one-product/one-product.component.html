@@ -1,12 +1,12 @@
 <!-- <a routerLink="/products/{{oneProduct.id}}"> -->
 <div class="my-5">
         <div class="my-5 flex-row">
-            <div class="card text-center shadow" style="width: 18rem; height: 28rem;">
+            <div class="card text-center shadow cardButtons" style="width: 18rem; height: 28rem;">
                 <img src={{oneProduct.images[0]}} class="card-img-top" [alt]="oneProduct.title">
                 <div class="card-body bg-dark">
                     <h5 class="card-text text-light">{{oneProduct.title}}</h5>
                     <h6 class="card-text text-light my-3">{{oneProduct.price|currency:"EGP"}}</h6>
-                    <a routerLink="/products/{{oneProduct.id}}" class="btn btn-light fw-bold">Show Detailes</a>
+                    <a routerLink="/products/{{oneProduct.id}}" class="btn btn-light fw-bold cardButtons">Show Detailes</a>
                 </div>
             </div>
         </div>

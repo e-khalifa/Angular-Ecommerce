@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { HomeComponent } from './features/home/home.component';
-import { CardComponent } from './features/Cart/card/card.component';
+import { CartComponent } from './features/Cart/cart/cart.component';
 import { AboutComponent } from './features/about/about.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
 import { ProfileComponent } from './features/profile/profile.component';
@@ -26,7 +26,7 @@ export const routes: Routes = [
     component: ProductDetailsComponent,
     title: 'Products Details',
   },
-  { path: 'card', component: CardComponent, title: 'Card' },
+  { path: 'cart', component: CartComponent, title: 'Cart' },
   { path: 'about', component: AboutComponent, title: 'About' },
   { path: 'contactus', component: ContactUsComponent, title: 'Contact Us' },
   { path: 'checkout', component: CheckoutComponent, title: 'Checkout' },
