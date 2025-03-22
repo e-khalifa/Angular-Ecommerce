@@ -23,7 +23,7 @@ Voyez is a modern e-commerce application built using Angular, Bootstrap, and JSO
 ### Install Dependencies
 ```sh
 npm install
-```d
+```
 
 ### Run the Development Server
 ```sh
