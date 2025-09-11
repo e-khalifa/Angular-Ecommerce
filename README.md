@@ -1,6 +1,9 @@
 # Voyez
 Voyez is a modern e-commerce application built using Angular, Bootstrap, and JSON Server. It provides a seamless shopping experience with features like cart management, product browsing, and a billing system.
-
+<div>
+<img src="https://github.com/e-khalifa/Angular-Ecommerce/blob/main/public/demo/angular_ecomm.jpeg">
+<div>
+  
 ## Table of Contents
 1. [📸 Demo](#-demo)
 2. [🚀 Getting Started](#-getting-started)
